@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro ✩</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body class="body_cadastro">
+    <header class="header_cadastro">  
+        <table>
+            <td>
+                <tr>
+                    <img src="img/cadastro.png" width="80%">
+                    <a href="index.html"><img src="img/mikubutton.png" width="15%"></a>
+                </tr>
+            </td>
+        </table>
+    </header><br>
+
+    <div class="cadastro">
+        <form action="cadastro.php" method="get" class="form_cadastro">
+            <label for="usuario" class="label_cadastro"><h2 class="h2_cadastro">Login</h2></label>
+            <input type="text" name="usuario" id="usuario" placeholder="Nome de usuário" class="input_cadastro">
+    
+            <label for="password" class="label_cadastro"><h2 class="h2_cadastro">Senha</h2></label>
+            <input type="password" name="senha" id="senha" placeholder="Digite sua senha" class="input_cadastro">
+                
+            <label for="password" class="label_cadastro"><h2 class="h2_cadastro">Confirmar</h2></label>
+            <input type="password" name="senha" id="senha" placeholder="Repita sua senha" class="input_cadastro">
+
+            <label for="nasci"class="label_cadastro"><h2 class="h2_cadastro">Data de nascimento</h2></label>
+            <input type="date" name="nasci" id="nasci" class="input_cadastro">
+
+            <label for="email"class="label_cadastro"><h2 class="h2_cadastro">Email</h2></label>
+            <input type="text" name="email" id="email" placeholder="Digite seu email" class="input_cadastro">
+
+            <div class="cadastro_termos" align="center">
+                <input type="checkbox"  class="input_cadastro"> Lembre-se de mim
+                <input type="checkbox"> Li e concordo com os <a href="img/termos.pdf">termos de condição</a><br> 
+            </div>
+        
+            <input type="submit" value="Cadastrar" name="Botao" id="Cadastrar" class="submit_cadastro">
+        
+            </a><br>
+            <a href="login.html" class="a_cadastro">
+                <button type="button" class="cadastro_button"><h3>Login</h3></button>
+            </a><br>
+        </form>
+    </div>
+</body>
+</html>

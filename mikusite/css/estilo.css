@@ -1,0 +1,663 @@
+/*index*/
+    .container_index {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 30vh 20vh 65vh 150vh;
+        grid-template-areas:"header_index header_index header_index"
+                            "nav_index nav_index nav_index"
+                            "aside_index main1_index main1_index"
+                            "main2_index main2_index main2_index"
+        }
+
+    .video_index{
+        padding:0%;
+        padding-right: 15%;
+    }
+
+    .header_index {
+    text-align: center;
+    grid-area: header_index;
+    }
+
+    .nav_index {
+    text-align: center;
+    grid-area: nav_index;
+        }
+
+    .aside_index{
+    text-align: left;
+    grid-area: aside_index;
+    }
+
+
+    .main1_index {
+    text-align: right;
+    grid-area: main1_index;
+        }
+
+    .main2_index{
+    grid-area: main2_index;
+    }
+
+    .footer_index {
+        background-repeat: repeat;
+    text-align: center;
+    grid-area: footer_index;
+    }
+
+    body.body_index{
+        background: url(https://www.otaquest.com/wp-content/uploads/2020/12/hatsune-miku-art-4k-w8-scaled.jpg)  center center no-repeat fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .index_button{
+        padding: 7%;
+    }
+
+    h2.h2_index{
+        font-size: 33px;
+        color: rgb(255, 255, 255);
+        padding: 1.5%;
+        background-color: rgba(0, 0, 0, 0.425);
+        border-style:solid;
+        border-radius: 50px;
+        border-color: rgba(255, 43, 71, 0.74);
+        word-spacing: 200px;
+        text-align: center;
+    }
+
+    p.miku_speech{
+        text-align: justify;
+        background-color: rgba(0, 0, 0, 0.425);
+        color: whitesmoke;
+        padding: 3%;
+        word-wrap:break-word;
+        border-style: solid;
+        border-radius: 50px;
+        border-color: rgba(255, 31, 61, 0.678);
+        font-size: 22px;
+        font-family: candara;
+    }
+
+    p.legenda{
+        background-color: rgba(0, 0, 0, 0.425);
+        color: whitesmoke;
+        padding: 1%;
+        word-wrap:break-word;
+        border-radius: 20px;
+        font-size: 20px;
+        font-family: candara;
+        width:max-content;
+        float: right;
+    }
+
+    a.a_index {
+        color:rgb(0, 204, 255);
+    }
+
+    a:hover.a_index{
+        color: rgb(255, 43, 71);
+    }
+
+    p.miku_title_index{
+        font-size: 40px;
+        color: rgb(255, 255, 255);
+        padding: 1.5%;
+        background-color: rgba(0, 0, 0, 0.425);
+        text-align: center;
+        word-spacing:300px;
+    }
+
+    img.miku_index{
+    padding: 3.5%;
+    padding-top: 0%;
+}
+
+
+/*menu*/
+
+    .container_menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 30vh 70vh;
+        grid-template-areas:"header_menu header_menu header_menu header_menu header_menu"
+                            "miku_gif perfil categorias mural miku_gif_inv"
+
+        }
+
+    .header_menu {
+    text-align: center;
+    grid-area: header_menu;
+    }
+
+    .miku_gif{
+    padding: 0%;
+    padding-top: 20%;
+    text-align: left;
+    grid-area: miku_gif;
+    }
+
+    .nav_menu {
+    padding: 0%;
+    padding-top: 5%;
+    text-align: center;
+    grid-area: perfil;
+        }
+
+    .aside_menu{
+    padding: 0%;
+    padding-top: 2%;
+    text-align: left;
+    grid-area: categorias;
+    }
+
+    .main_menu{
+    padding: 0%;
+    padding-top: 20%;
+    text-align: right;
+    grid-area: mural;
+        }
+
+    .miku_gif_inv{
+    transform: scaleX(-1); /*reflete a img*/
+    padding:0%;
+    padding-top: 20%;
+    text-align: right;
+    grid-area: miku_gif_inv;
+            }
+
+
+    body.body_menu{
+        background-image: url(https://i.pinimg.com/originals/6d/c1/17/6dc11726798611a9e2fa758a02188bf9.gif) ;
+        background-repeat: repeat;
+        width:100%;
+        margin: 0 auto;
+    }
+
+    header.menu{
+        font-size: 33px;
+        width:100%;
+        color: rgb(255, 255, 255);
+        padding: 1%;
+        background-color: rgba(0, 0, 0, 0.863);
+        border-style:hidden;
+        word-spacing: 400px;
+        border-radius: 200px;
+        text-align: right;
+    }
+
+    a.a_menu {
+        color:rgb(0, 204, 255);
+        font-size: 80%;
+    
+    }
+
+    a:hover.a_menu{
+        color: rgb(255, 43, 71);
+    }
+
+    .nav_menu{
+        float: center;
+        text-align: center;
+        color: whitesmoke;
+        padding: 30px;
+        border-style:hidden;
+        border-radius: 20px;
+        font-weight: 300;
+        font-family: candara;
+    }
+
+    a.categ{
+        font-size: 70%;
+    }
+
+    p.p_menu{
+    color: rgb(0, 204, 255);
+    float: center;
+    text-align: center;
+    border-style:hidden;
+    border-radius: 20%;  /*arredonda as pontas*/
+    font-size: 50px;
+    font-weight: 350;
+    font-family: candara;
+    }
+
+    p:hover.p_menu{
+    color:rgb(255, 43, 71) ;
+    }
+    
+
+    h2.menu{
+        color: rgb(0, 204, 255);
+        float: center;
+        text-align: center;
+        padding: 50%;
+        border-style:hidden;
+        border-radius: 20%;  /*arredonda as pontas*/
+        font-size: 50px;
+        font-weight: 350;
+        font-family: candara;
+    }
+    
+    h2:hover.menu{
+        color:rgb(255, 43, 71) ;
+    }
+
+    img.mural{
+        text-align: center;
+    }
+
+    .menu_button{
+    float: right;
+    padding: 0%;
+    padding-top: 3%;
+    padding-right: 1%;
+    }
+
+    .menu_title{
+    padding: 0%;
+    padding-left:15%;
+    }
+    
+    h3.menu{
+        color: rgb(0, 204, 255);
+        float: center;
+        text-align: center;
+        padding: 10%;
+        border-style:hidden;
+        border-radius: 20%;  /*arredonda as pontas*/
+        font-size: 50px;
+        font-weight: 350;
+        font-family: candara;
+    }
+
+
+/*cadastro*/
+
+    body.body_cadastro{
+        background-image: url(https://i.gifer.com/IrF.gif);
+    }
+
+    h1.h1_cadastro{
+        font-size: 66px;
+        color: rgb(255, 255, 255);
+        padding: 1.5%;
+        background-color: rgba(0, 0, 0, 0.425);
+        border-style:solid;
+        border-radius: 50px;
+        border-color: rgba(0, 204, 255, 0.891) ;
+    }
+
+    h2.h2_cadastro{
+        font-size: 33px;
+        font-family: candara;
+    }
+
+    a.a_cadastro{
+        color:rgb(0, 204, 255);
+    }
+
+    a:hover.a_cadastro{
+        color: rgb(255, 43, 71);
+    }
+
+    input.input_cadastro{
+        padding: 15px;
+        font-size: 14px;
+        border: 2px solid rgb(0, 204, 255);
+        margin-bottom: 20px;
+        margin-top: 5px;
+        border-radius: 4px;
+    }
+
+    label.label_cadastro{
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .cadastro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    form.form_cadastro{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border-radius: 15px;
+        padding: 40px;
+        height: 90%;
+    }
+
+    header.header_cadastro{
+        font-size: 33px;
+        color: rgb(255, 255, 255);
+        padding: 1%;
+        background-color: rgba(0, 0, 0, 0.863);
+        border-style:hidden;
+        word-spacing: 400px;
+        border-radius: 200px;
+        text-align: right;
+    }
+
+    button.cadastro_button{
+        background-color: rgb(11, 8, 28);
+        border-radius: 50px;
+        text-align: center;
+        color: white;
+        width: 500px;
+    }
+
+    input.submit_cadastro{
+        background-color: rgb(11, 8, 28);
+        border-radius: 50px;
+        text-align: center;
+        color: white;
+        width: 500px;
+        padding: 15px;
+        font-size: 14px;
+        margin-bottom: 20px;
+        margin-top: 5px;
+    }
+
+    .hatsune {
+        float: left;
+    }
+
+    .title_cadastro{
+        float: center;
+        padding: 0%;
+        padding-right:10%;
+
+        }
+
+
+/*login*/
+    body.body_login{
+        background-image: url(https://i.pinimg.com/originals/ac/25/4e/ac254e3b47185dfc8accba22f06bbc38.gif)  ;
+    }
+
+
+    h1.h1_login{
+        font-size: 66px;
+        color: rgb(255, 255, 255);
+        padding: 1.5%;
+        background-color: rgba(0, 0, 0, 0.425);
+        border-style:solid;
+        border-radius: 50px;
+        border-color: rgba(0, 204, 255, 0.891) ;
+    }
+
+    h2.h2_login{
+        font-size: 33px;
+        font-family: candara;
+    }
+
+    a.a_login{
+        color:rgb(0, 204, 255);
+    }
+
+    a:hover.a_login{
+        color: rgb(255, 43, 71);
+    }
+
+    input.input_login{
+        padding: 15px;
+        font-size: 14px;
+        border: 2px solid rgb(0, 204, 255);
+        margin-bottom: 20px;
+        margin-top: 5px;
+        border-radius: 4px;
+    }
+
+    label.label_login{
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    div.login {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .title_login{
+    float: center;
+    padding: 0%;
+    padding-right:10%;
+
+    }
+
+    form.form_login{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border-radius: 15px;
+        padding: 40px;
+        height: 90%;
+    }
+
+    header.header_login{
+        font-size: 33px;
+        color: rgb(255, 255, 255);
+        padding: 1%;
+        background-color: rgba(0, 0, 0, 0.863);
+        border-style:hidden;
+        word-spacing: 400px;
+        border-radius: 200px;
+        text-align: right;
+    }
+
+    button.login_button{
+        background-color: rgb(11, 8, 28);
+        border-radius: 50px;
+        text-align: center;
+        color: white;
+        width: 500px;
+    }
+
+    button.checkbox{
+        text-align: justify;
+    }
+
+    input.checkbox{
+        background-color: rgb(11, 8, 28);
+        border-radius: 50px;
+        text-align: center;
+        color: white;
+        width: 500px;
+    }
+
+    .hatsune {
+        float: left;
+    }
+
+
+/*musicas*/
+
+    .container_musicas {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 30vh 20vh 65vh 35vh;
+        grid-template-areas:"header_musicas header_musicas header_musicas"
+                            "nav_musicas nav_musicas nav_musicas"
+                            "main1_musicas aside_musicas main2_musicas"
+                            "footer_musicas footer_musicas footer_musicas"
+        }
+
+    .header_musicas {
+        text-align: center;
+        grid-area: header_musicas;
+        background-color:  rgba(0, 0, 0, 0.171);
+        }
+
+    .nav_musicas {
+        text-align: center;
+        grid-area: nav_musicas;
+            }
+            
+    .main1_musicas{
+        float: left;
+        grid-area: main1_musicas;
+            }        
+
+    .aside_musicas{
+        text-align: left;
+        grid-area: aside_musicas;
+        }
+
+    .main2_musicas{
+        text-align: center;
+        grid-area: main2_musicas;
+            }
+
+    .footer_musicas {
+        background-image: url(https://i.pinimg.com/originals/29/12/03/291203a2fda41f268d23f850b32da29c.gif);
+        background-repeat: repeat;
+        text-align: center;
+        grid-area: footer_musicas;
+        }
+
+
+    body.body_musicas{
+            background: url(https://wallpaperaday.files.wordpress.com/2023/05/wallpaper714.png) center center no-repeat fixed; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+}
+
+    .musicas_button{
+        float: left;
+        padding: 0%;
+        padding-top: 3%;
+        padding-right: 1%;
+        }
+    
+    .musicas_title{
+        float: center;
+        text-align: center;
+        padding: 0%;
+        padding-left:15%;
+        }
+
+    .main1_musicas{
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.425);
+        color: whitesmoke;
+        padding: 3%;
+        border-style: solid;
+        border-color: rgba(0, 183, 255, 0.192);
+        font-size: 22px;
+        font-family: candara;
+        height: fit-content;
+        }
+
+    .main2_musicas{
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.425);
+        color: whitesmoke;
+        padding: 3%;
+        border-style: solid;
+        border-color: rgba(0, 183, 255, 0.192);
+        font-size: 22px;
+        font-family: candara;
+        height: fit-content;
+        }
+
+        
+/*quizzes*/
+
+.container_quizzes {
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows: 30vh 400vh;
+    grid-template-areas:"header_quizzes"
+                        "main_quizzes"
+
+    }
+
+.header_quizzes {
+    background-color: rgba(1, 139, 219, 0.308);
+    text-align: center;
+    grid-area: header_quizzes;
+}
+
+.main_quizzes{
+    padding: 0%;
+    padding-top: 5%;
+    text-align: right;
+    grid-area: main_quizzes;
+        }
+
+.body_quizzes{
+    background: url(https://i.imgur.com/vNcpgZV.png) center center no-repeat fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
+}
+
+header.quizzes{
+    font-size: 33px;
+    width:100%;
+    color: rgb(255, 255, 255);
+    padding: 1%;
+    background-color: rgba(0, 0, 0, 0.863);
+    border-style:hidden;
+    word-spacing: 400px;
+    border-radius: 200px;
+    text-align: right;
+}
+
+/*jogos*/
+ .container_jogos{
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows: 30vh 400vh;
+    grid-template-areas:"header_jogos"
+                        "main_jogos"
+ }
+
+ .header_jogos{
+    background-color: rgba(0, 1, 85, 0.308);
+    text-align: center;
+    grid-area: header_jogos;
+}
+
+body.body_jogos{
+    background: url(https://rare-gallery.com/uploads/posts/1087815-Vocaloid-Hatsune-Miku-stage-screenshot-computer-wallpaper-special-effects.png) center center no-repeat fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
+}
+
+ h1.h1_jogos{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    background-color:rgba(0, 1, 56, 0.308) ;
+ }
+
+ p.p_jogos{
+    color: white;
+    float: center;
+    text-align: center;
+    border-style:hidden;
+    border-radius: 0%;  /*arredonda as pontas*/
+    font-size: 30px;
+    font-weight: 350;
+    font-family: candara;
+    padding: 3%;
+    word-wrap:break-word;
+    border-style: solid;
+    border-radius: 50px;
+    background-color:rgba(0, 0, 26, 0.671);
+    }
